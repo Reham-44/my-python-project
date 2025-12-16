@@ -14,5 +14,7 @@ jobs:
       run: |
         echo "Hello from GitHub Actions!"
 
+    - uses: actions/checkout@v3
+
     - name: "folder contents"
       run: ls
