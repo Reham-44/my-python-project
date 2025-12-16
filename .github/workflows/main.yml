@@ -17,4 +17,4 @@ jobs:
       run: docker build -t ${{secrets.USERNAME}}/my-python-img:latest .
 
     - name: "Pushing to DockerHub"
-      run: docker push {{secrets.USERNAME}}/my-python-img:latest
+      run: docker push ${{secrets.USERNAME}}/my-python-img:latest
