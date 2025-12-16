@@ -7,14 +7,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: "testing GitHub actions"
-      run: pwd
-
-    - name: "print"
-      run: |
-        echo "Hello from GitHub Actions!"
 
     - uses: actions/checkout@v3
 
-    - name: "folder contents"
-      run: ls
+    - name: "login to DockerHub "
+    - run: docker login --username ${{ secrets.USERNAME }} --password ${{ secrets.PASSWORD }}
