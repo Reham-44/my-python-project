@@ -13,3 +13,6 @@ jobs:
     - name: "print"
       run: |
         echo "Hello from GitHub Actions!"
+
+    - name: "folder contents"
+      run: ls
