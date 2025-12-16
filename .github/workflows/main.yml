@@ -12,3 +12,6 @@ jobs:
 
     - name: "login to DockerHub "
       run: docker login --username ${{ secrets.USERNAME }} --password ${{ secrets.PASSWORD }}
+
+    - name: "Building Image"
+      run: docker build -t ${{secrets.USERNAME}}/my-python-img:latest
